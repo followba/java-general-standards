@@ -12,8 +12,9 @@ This skill focuses on general Java standards that are broadly reusable across pr
 2. code style, object/value handling, collections, concurrency, and control flow
 3. exceptions, error-code boundaries, and logging rules
 4. unit testing expectations and review signals
-5. MySQL, SQL, and ORM mapping constraints
-6. engineering structure vocabulary and documentation signals
+5. security review signals for common Java application risks
+6. MySQL, SQL, and ORM mapping constraints
+7. engineering structure vocabulary and design-documentation signals
 
 It is intentionally separate from project-specific layered backend rules. If a repository also needs strict layering constraints such as `Controller -> Service -> BizMapper -> Mapper`, pair this skill with `java-backend-standards`.
 
@@ -29,10 +30,12 @@ It is intentionally separate from project-specific layered backend rules. If a r
 └── references/
     ├── checklist.md
     ├── code-and-runtime-rules.md
+    ├── design-and-architecture.md
     ├── engineering-structure.md
     ├── exceptions-and-logging.md
     ├── mysql-sql-orm.md
     ├── naming-and-constants.md
+    ├── security.md
     └── unit-testing.md
 ```
 
@@ -42,8 +45,10 @@ It is intentionally separate from project-specific layered backend rules. If a r
 - `references/code-and-runtime-rules.md`: style, object/value rules, collections, concurrency, control flow
 - `references/exceptions-and-logging.md`: error-code boundaries, exception handling, logging rules
 - `references/unit-testing.md`: unit-test expectations and review signals
+- `references/security.md`: security review signals for input validation, exposure, redirects, and abuse controls
 - `references/mysql-sql-orm.md`: MySQL, SQL, and ORM mapping guidance
-- `references/engineering-structure.md`: model/layer vocabulary, documentation and design-review signals
+- `references/engineering-structure.md`: model/layer vocabulary and documentation expectations
+- `references/design-and-architecture.md`: architecture-review and design-documentation signals
 - `references/checklist.md`: flat review checklist for quick passes
 
 ## Usage
