@@ -1,0 +1,4 @@
+interface:
+  display_name: "Java General Standards"
+  short_description: "Apply general Java coding rules"
+  default_prompt: "Use $java-general-standards to review or refactor Java code against general naming, exception, logging, unit test, MySQL/SQL/ORM, and engineering structure rules."

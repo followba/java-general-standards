@@ -1,0 +1,23 @@
+# Java General Standards Checklist
+
+- [ ] Class, method, field, and constant names are clear and consistent.
+- [ ] Identifiers do not start or end with `_` or `$`.
+- [ ] Business logic does not depend on unexplained magic values.
+- [ ] Enum and constant usage matches the domain meaning.
+- [ ] Static members are accessed through classes, not instances.
+- [ ] Boxed numeric equality does not rely on `==`.
+- [ ] `BigDecimal` is not constructed from `double`.
+- [ ] Exceptions are not used for ordinary control flow.
+- [ ] Exceptions are either handled deliberately or rethrown deliberately.
+- [ ] No `System.out`, `System.err`, or `printStackTrace()` in production code.
+- [ ] Logs use placeholders instead of hot-path string concatenation.
+- [ ] Error codes are separated from user-facing messages.
+- [ ] Critical changes include unit tests or an explicit reason they do not.
+- [ ] Tests are automatic, independent, and repeatable.
+- [ ] Collection code avoids unsafe mutation patterns and fixed-size view misuse.
+- [ ] Concurrency code does not create unmanaged threads or leak `ThreadLocal` state.
+- [ ] SQL does not use `select *`.
+- [ ] SQL parameters are bound safely rather than interpolated.
+- [ ] Multi-table SQL qualifies columns with aliases.
+- [ ] Pagination code short-circuits when `count == 0`.
+- [ ] ORM mappings are explicit when naming conventions differ.
