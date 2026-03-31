@@ -1,6 +1,6 @@
 ---
 name: java-general-standards
-description: Apply general Java coding standards for refactor and code review tasks. Use when requests involve naming, constants, enums, code style, exceptions, logging, unit tests, collections, concurrency, control flow, MySQL/SQL/ORM rules, or general engineering structure in Java projects.
+description: Apply general Java coding standards for refactor and code review tasks. Use when requests involve naming, constants, enums, code style, exceptions, logging, unit tests, collections, concurrency, control flow, security review signals, MySQL/SQL/ORM rules, or design and architecture documentation in Java projects.
 ---
 
 # Java General Standards
@@ -14,8 +14,10 @@ This skill is for:
 - code style and runtime rules
 - exceptions and logging
 - unit testing
+- security review signals
 - MySQL / SQL / ORM rules
 - engineering structure vocabulary
+- design and architecture documentation
 
 This skill is not for project-specific layering rules such as `Controller -> Service -> BizMapper -> Mapper`. Use `java-backend-standards` for those constraints.
 
@@ -39,10 +41,14 @@ This skill is not for project-specific layering rules such as `Controller -> Ser
   `references/exceptions-and-logging.md`
 - Unit test rules:
   `references/unit-testing.md`
+- Security review signals:
+  `references/security.md`
 - MySQL, SQL, ORM mapping:
   `references/mysql-sql-orm.md`
 - Engineering structure vocabulary:
   `references/engineering-structure.md`
+- Design and architecture documentation:
+  `references/design-and-architecture.md`
 - Fast review pass:
   `references/checklist.md`
 
@@ -54,6 +60,7 @@ This skill is not for project-specific layering rules such as `Controller -> Ser
 - No `System.out`, `System.err`, or `printStackTrace()` in production code.
 - Exceptions are not used for normal control flow.
 - Error codes are separated from user-facing messages.
+- External input is validated and sensitive output is protected.
 - Critical changes include maintainable unit tests.
 - SQL avoids unsafe interpolation and avoids `select *`.
 - ORM mappings are explicit where field/property conventions differ.

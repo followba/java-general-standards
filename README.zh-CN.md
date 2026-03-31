@@ -10,8 +10,9 @@
 2. 代码风格、对象和值处理、集合、并发、控制流
 3. 异常边界、错误码、日志规则
 4. 单元测试要求和 review 信号
-5. MySQL、SQL、ORM 映射约束
-6. 工程结构术语、文档与设计信号
+5. 常见 Java 应用安全 review 信号
+6. MySQL、SQL、ORM 映射约束
+7. 工程结构术语、设计与文档信号
 
 它刻意不承载项目专属的后端分层约束。若某个项目还要求严格的 `Controller -> Service -> BizMapper -> Mapper` 调用链，应与 `java-backend-standards` 一起使用。
 
@@ -27,10 +28,12 @@
 └── references/
     ├── checklist.md
     ├── code-and-runtime-rules.md
+    ├── design-and-architecture.md
     ├── engineering-structure.md
     ├── exceptions-and-logging.md
     ├── mysql-sql-orm.md
     ├── naming-and-constants.md
+    ├── security.md
     └── unit-testing.md
 ```
 
@@ -40,8 +43,10 @@
 - `references/code-and-runtime-rules.md`：代码风格、对象/值规则、集合、并发、控制流
 - `references/exceptions-and-logging.md`：错误码边界、异常处理、日志规则
 - `references/unit-testing.md`：单元测试要求与 review 信号
+- `references/security.md`：输入校验、数据暴露、重定向和滥用防护等安全 review 信号
 - `references/mysql-sql-orm.md`：MySQL、SQL、ORM 映射规范
-- `references/engineering-structure.md`：模型/分层术语、文档与设计评审信号
+- `references/engineering-structure.md`：模型/分层术语与文档要求
+- `references/design-and-architecture.md`：架构评审和设计文档信号
 - `references/checklist.md`：快速 review 检查单
 
 ## 使用方式

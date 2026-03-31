@@ -4,7 +4,7 @@
 
 Use this reference when a task needs shared vocabulary for Java backend model roles or common application layering.
 
-This file is intentionally generic. Project-specific layering rules belong in project-specific skills.
+This file is intentionally generic. Project-specific layering rules belong in project-specific skills, and broader architecture-review guidance belongs in `design-and-architecture.md`.
 
 ## Common Model Terms
 
@@ -39,13 +39,6 @@ This file is intentionally generic. Project-specific layering rules belong in pr
 - Good naming and structure reduce comment burden; comments should explain intent or constraints, not restate obvious code.
 - Delete dead code rather than leaving large commented blocks without clear reason and timestamp.
 - Code is not a complete substitute for architecture or design documentation.
-
-## Design Review Signals
-
-- Review persistent data structures before rollout when the change affects schema, storage, or long-term evolution cost.
-- When object states become non-trivial, capture the state model explicitly.
-- When multiple collaborating objects form a non-trivial flow, capture the sequence explicitly.
-- Architecture and design docs should retain the reasoning about boundaries, dependencies, and non-functional requirements rather than only implementation detail.
 
 ## Review Signals
 

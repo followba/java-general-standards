@@ -14,6 +14,10 @@
 - [ ] Error codes are separated from user-facing messages.
 - [ ] Critical changes include unit tests or an explicit reason they do not.
 - [ ] Tests are automatic, independent, and repeatable.
+- [ ] Personal or tenant-scoped data paths enforce permission checks.
+- [ ] Sensitive data is masked or filtered before display and logging.
+- [ ] External input is validated before driving SQL, redirects, regex, shell, or resource-heavy logic.
+- [ ] HTML output and redirect targets are handled with explicit safety controls.
 - [ ] Collection code avoids unsafe mutation patterns and fixed-size view misuse.
 - [ ] Concurrency code does not create unmanaged threads or leak `ThreadLocal` state.
 - [ ] SQL does not use `select *`.
@@ -21,3 +25,4 @@
 - [ ] Multi-table SQL qualifies columns with aliases.
 - [ ] Pagination code short-circuits when `count == 0`.
 - [ ] ORM mappings are explicit when naming conventions differ.
+- [ ] Important state models, data-structure changes, or multi-object flows have matching design documentation when complexity justifies it.
